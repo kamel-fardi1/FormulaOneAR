@@ -5,6 +5,14 @@
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.CAMERA" />
     <uses-feature android:name="android.hardware.camera.ar" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"
+        tools:ignore="ScopedStorage" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE" />
     <application
         android:allowBackup="true"
         android:dataExtractionRules="@xml/data_extraction_rules"
@@ -16,7 +24,7 @@
         android:theme="@style/Theme.FormulaOneAR"
         tools:targetApi="31">
         <activity
-            android:name=".MainActivity"
+            android:name=".SplashScreen"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -24,6 +32,62 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
 
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".View.Navigation"
+            android:exported="false"
+            android:theme="@style/Theme.FormulaOneAR.NoActionBar">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".View.Activity.ForgetPassword3"
+            android:exported="false"
+            android:theme="@style/Theme.FormulaOneAR.NoActionBar">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".View.Activity.ForgetPassword2"
+            android:exported="false"
+            android:theme="@style/Theme.FormulaOneAR.NoActionBar">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".View.Activity.ForgetPassword1"
+            android:exported="false"
+            android:theme="@style/Theme.FormulaOneAR.NoActionBar">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".View.Activity.AutoLogin"
+            android:exported="false"
+            android:theme="@style/Theme.FormulaOneAR.NoActionBar">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".View.Activity.SignUp"
+            android:exported="false"
+            android:theme="@style/Theme.FormulaOneAR.NoActionBar">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".View.Activity.Login"
+            android:exported="false"
+            android:theme="@style/Theme.FormulaOneAR.NoActionBar">
             <meta-data
                 android:name="android.app.lib_name"
                 android:value="" />

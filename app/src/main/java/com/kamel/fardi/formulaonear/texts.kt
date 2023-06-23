@@ -13,7 +13,7 @@ import com.kamel.fardi.formulaonear.View.Fragement.AddFragment
 
 class texts : Fragment() {
 
-    private val textss = listOf("f1.glb", "formula1_apline.glb", "formularedbull.glb")
+     val textss = listOf("f1.glb", "formula1_apline.glb", "formularedbull.glb")
 
     override fun onCreateView(
         inflater: LayoutInflater,

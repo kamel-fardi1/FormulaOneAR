@@ -25,7 +25,7 @@ class AddFragment  : Fragment() {
         val selectedText = arguments?.getString("selectedText")
         // Load model.glb from assets folder or http url
         val arFragment = childFragmentManager.findFragmentById(R.id.arFragment) as ArFragment
-        arFragment.setOnTapPlaneGlbModel(selectedText ?: "formularedbull.glb")
+        arFragment.setOnTapPlaneGlbModel(selectedText ?: "formula1_alpine.glb")
 
         // arFragment.setOnTapPlaneGlbModel("https://github.com/codemaker2015/3d-models/blob/master/glb_files/model.glb?raw=true")
     }
